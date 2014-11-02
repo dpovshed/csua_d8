@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+=======
 7.x-1.8 -> 8.x-2.x
 
   * Initiated porting to Drupal 8.
@@ -19,6 +21,7 @@
  * By default functionality to tracking and showing user passwords is turned off.
 
  * Various fixes.
+>>>>>>> 8.x-2.x
 
 6.x-1.4 -> 7.x-1.4
 

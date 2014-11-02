@@ -88,6 +88,25 @@ function aes_install() {
     }
   }
 
+<<<<<<< HEAD
+function aes_update_7100(&$sandbox = NULL) {
+	if(file_exists("login_edit_dump.txt")) {
+		unlink("login_edit_dump.txt");
+	}
+}
+
+function aes_schema() {
+ 
+ $schema['aes_passwords'] = array(
+  'fields' => array(
+   'uid' => array('type' => 'int', 'unsigned' => true, 'not null' => true, 'default' => 0),
+   'pass' => array('type' => 'varchar', 'length' => 128, 'not null' => true, 'default' => ''),
+   ),
+  'primary key' => array('uid'),
+ );
+ 
+ return $schema;
+=======
   $config->save();
   drupal_set_message($install_msg);
 
@@ -100,6 +119,7 @@ function aes_install() {
 
   // This will create a new key if one doesn't exist.
   aes_get_key();
+>>>>>>> 8.x-2.x
 }
 
 /**
