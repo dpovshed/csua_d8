@@ -16,8 +16,14 @@ class AesController extends ControllerBase {
 
     $output .= var_export(\Drupal::hasService('aes.crypt'), 1);
     $output .= "<br>";
+    /** @var \Drupal\aes\AesCryptManager $srv */
     $srv = \Drupal::service('aes.crypt');
-    $output .= var_export($srv->getPlugins(), 1);
+
+    $test = 'test';
+    $output .= $test;
+    $output .= $srv->encrypt($test);
+
+    //$output .= var_export($srv->getPlugins(), 1);
     //$imp = $srv->createInstance('MCrypt');
     //$output .= var_export($srv, 1);
 

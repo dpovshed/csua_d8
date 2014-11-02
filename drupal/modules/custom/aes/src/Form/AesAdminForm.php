@@ -136,5 +136,6 @@ class AesAdminForm extends ConfigFormBase {
    */
   public function submitForm(array &$form, FormStateInterface $form_state) {
     drupal_set_message(t('BLAH!!.'));
+    aes_config_submit($form, $form_state);
   }
 }
