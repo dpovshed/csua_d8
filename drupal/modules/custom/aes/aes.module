@@ -1,16 +1,10 @@
 <?php
 
 /**
-<<<<<<< HEAD
-* AES encryption
-* @version 7.x-1.5
-*/
-=======
  * @file
  *
  * Main file of the AES encryption module.
  */
->>>>>>> 8.x-2.x
 
 // Set phpseclib to use its internal implementation even if mcrypt is available.
 define("CRYPT_AES_MODE", 1);
@@ -220,17 +214,6 @@ function aes_config_submit($form, &$form_state) {
   $config->save();
 }
 
-<<<<<<< HEAD
-function aes_user_login(&$edit, $account) {
-  
-  if (variable_get("aes_convert", "true") == "true" && aes_password_exists($account->uid) == false) {
-   db_insert('aes_passwords')
-       ->fields(array(
-         'uid' => $account->uid,
-         'pass' => aes_encrypt($edit['input']['pass']),
-       ))
-       ->execute();
-=======
 function watchdog() {}
 
 function aes_get_key() {
@@ -239,7 +222,6 @@ function aes_get_key() {
     $key = aes_make_key();
     \Drupal::config('aes.settings')->set("key", $key)->save();
     watchdog("aes", "AES module made a new key since one couldn't be found.");
->>>>>>> 8.x-2.x
   }
   return $key;
 }
