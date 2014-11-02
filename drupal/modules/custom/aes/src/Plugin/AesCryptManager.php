@@ -10,7 +10,7 @@ namespace Drupal\aes\Plugin;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
 
-class AesCryptManager {//implements AESCryptInterface {
+class AesCryptManager implements ICrypt {
 
   /**
    * The contact settings config object.

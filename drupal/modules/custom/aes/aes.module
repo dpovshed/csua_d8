@@ -24,7 +24,7 @@ function aes_permission() {
 function aes_load_phpsec() {
 
   // Find out where this module is located and set up an include path for the phpsec library.
-  if (module_exists('libraries') && libraries_get_path('phpseclib')) {
+  if (\Drupal::moduleHandler()->moduleExists('libraries') && libraries_get_path('phpseclib')) {
     $phpsec_include_path = libraries_get_path('phpseclib');
   }
   else {

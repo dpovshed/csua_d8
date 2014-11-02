@@ -28,7 +28,7 @@ class AesAdminForm extends ConfigFormBase {
     $config = $this->config('aes.settings');
 
     // @todo clean-up
-    $srv = \Drupal
+    //$srv = \Drupal
 
     $phpseclib_error_msg = "";
 
