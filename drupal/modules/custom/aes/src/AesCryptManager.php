@@ -6,7 +6,7 @@
  * Time: 12:03 PM
  */
 
-namespace Drupal\aes\Plugin;
+namespace Drupal\aes;
 
 use Drupal\Core\Config\ConfigFactoryInterface;
 

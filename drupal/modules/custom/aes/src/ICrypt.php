@@ -6,7 +6,7 @@
  * Time: 12:05 PM
  */
 
-namespace Drupal\aes\Plugin;
+namespace Drupal\aes;
 
 /**
  * Interface ICrypt

@@ -6,7 +6,7 @@
  * Time: 12:52 PM
  */
 
-namespace Drupal\aes\Plugin;
+namespace Drupal\aes;
 
 
 class MCryptStrategy implements ICrypt{

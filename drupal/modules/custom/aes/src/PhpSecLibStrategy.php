@@ -6,7 +6,7 @@
  * Time: 12:57 PM
  */
 
-namespace Drupal\aes\Plugin;
+namespace Drupal\aes;
 
 class PhpSecLibStrategy {
 
