@@ -8,10 +8,32 @@
 
 namespace Drupal\aes\Plugin;
 
-use Drupal\Core\Config\Config;
+use Drupal\Core\Config\ConfigFactoryInterface;
 
-class AesCryptManager {
-  public function __construct(Config $config) {
-    var_dump($config);
+class AesCryptManager {//implements AESCryptInterface {
+
+  /**
+   * The contact settings config object.
+   *
+   * @var \Drupal\Core\Config\ConfigFactoryInterface
+   */
+  protected $configFactory;
+
+  /**
+   * Constructs a ContactPageAccess instance.
+   *
+   * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
+   *   The config factory.
+   */
+  public function __construct(ConfigFactoryInterface $config) {
+    $this->configFactory = $config;
   }
+
+  public function getPlugins() {
+    return [
+      'mcrypt' => 'mCrypt',
+      'php' => 'PHP',
+    ];
+  }
+
 } 

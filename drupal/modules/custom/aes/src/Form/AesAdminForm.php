@@ -22,16 +22,13 @@ class AesAdminForm extends ConfigFormBase {
   }
 
   /**
-   * Constructs an object.
-   */
-  public function __construct() {
-  }
-
-  /**
    * {@inheritdoc}
    */
   public function buildForm(array $form, FormStateInterface $form_state) {
-    $config = \Drupal::config('aes.settings');
+    $config = $this->config('aes.settings');
+
+    // @todo clean-up
+    $srv = \Drupal
 
     $phpseclib_error_msg = "";
 

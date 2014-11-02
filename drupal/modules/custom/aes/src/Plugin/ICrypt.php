@@ -16,4 +16,5 @@ namespace Drupal\aes\Plugin;
 interface ICrypt {
   //public function encrypt($data, AesImplementation = NULL);
   //public function decrypt($data, AesImplementation = NULL);
+  //public function encrypt($data, $plugin_id); // AEScm->createInstace($pluginID)->encrypt($data);
 }
